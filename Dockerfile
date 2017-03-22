@@ -44,8 +44,5 @@ RUN rvm install 2.4.0
 RUN rvm list 
 RUN echo "source /usr/local/rvm/scripts/rvm" >> /etc/profile 
 RUN echo "rvm use ruby-2.4.0 --default" >> /etc/profile 
-# RUN /root/create-user ruby 4208 ruby 4208 
-# RUN usermod -a -G rvm ruby 
-RUN /root/post-install 
 
 CMD [/bin/bash", "-l"]
